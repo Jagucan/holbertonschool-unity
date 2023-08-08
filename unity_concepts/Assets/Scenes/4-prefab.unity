@@ -176,7 +176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3063425987493548555, guid: 85afc6758c93e1740bc7bfa608201238, type: 3}
       propertyPath: m_Name
-      value: Ball (2)
+      value: Ball
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85afc6758c93e1740bc7bfa608201238, type: 3}
@@ -233,7 +233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3063425987493548555, guid: 85afc6758c93e1740bc7bfa608201238, type: 3}
       propertyPath: m_Name
-      value: Ball (1)
+      value: Ball
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85afc6758c93e1740bc7bfa608201238, type: 3}
