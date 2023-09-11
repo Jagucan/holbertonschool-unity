@@ -71,9 +71,9 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-
 .gitattributes
 .vsconfig
+
 unity_concepts/Library/*
 unity_concepts/Temp/*
 unity_publishing/ProjectSettings/*
