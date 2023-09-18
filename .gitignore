@@ -72,6 +72,8 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 unity_concepts/Library/*
 unity_concepts/Temp/*
+unity-assets_models_textures/Library/*
+unity-assets_models_textures/Temp/*
 unity_publishing/ProjectSettings/AudioManager.asset
 unity_publishing/ProjectSettings/ClusterInputManager.asset
 unity_publishing/ProjectSettings/DynamicsManager.asset
@@ -94,3 +96,12 @@ unity_publishing/ProjectSettings/NavMeshAreas.asset
 unity_publishing/.vsconfig
 .vsconfig
 .gitattributes
+unity-assets_models_textures/Library/ArtifactDB
+
+*/Library/
+*/Temp/
+*/Obj/
+*/Build/
+*/Builds/
+*/Logs/
+*/UserSettings/
