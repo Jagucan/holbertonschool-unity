@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Example : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Example : MonoBehaviour
     public float playerSpeed;
     public float jumpHeight;
     private readonly float gravityValue = -9.81f;
+
 
     void Update()
     {
