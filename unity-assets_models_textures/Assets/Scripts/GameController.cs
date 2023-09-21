@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class GameController : MonoBehaviour
         {
             player.SetActive(false);
             newPlayer.SetActive(true);
-            StartCoroutine(LoadScene(2));
+            StartCoroutine(LoadScene(2f));
         }
     }
     void RestartScene()
