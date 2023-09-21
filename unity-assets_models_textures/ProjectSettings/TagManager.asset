@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Lost
   - New Player
+  - WinFlag
   layers:
   - Default
   - TransparentFX

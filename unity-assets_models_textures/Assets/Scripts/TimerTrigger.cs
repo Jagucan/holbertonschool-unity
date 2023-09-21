@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class TimerTrigger : MonoBehaviour
 {
-    public Timer timer;
-    public GameObject timerController;
-    private bool timerStarted = false;
+    [SerializeField] private Timer timer;
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player") && !timerStarted)
+        if (other.CompareTag("Player"))
         {
             // Enable the Timer script and start counting up
             if (!timer.enabled)
             {
                 timer.enabled = true;
-                timerStarted = true;
+                timer.DisableTimer();
             }
+            
         }
     }
     /*

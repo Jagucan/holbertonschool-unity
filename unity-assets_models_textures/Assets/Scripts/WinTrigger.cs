@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class WinTrigger : MonoBehaviour
 {
-    private TimerTrigger timerTrigger;
-    public GameObject WinFlag;
+    [SerializeField] private Timer timer;
 
-    void Start()
+    void OnTriggerEnter(Collider other)
     {
-        timerTrigger = GetComponent<TimerTrigger>();
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("WinFlag") && timerTrigger != null)
+        if (other.CompareTag("Player"))
         {
-            //timerTrigger.isRunning = false;
+            // Disable the Timer script, stop counting up an change the Text color and Size.
+            timer.enabled = false;
+            timer.DisableTimer();
+            timer.timerText.color = Color.green;
+            timer.timerText.fontSize = 60;
         }
     }
 }
