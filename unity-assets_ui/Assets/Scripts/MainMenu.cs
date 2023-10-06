@@ -1,18 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Update()
     {
-        
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
+    public void LevelSelect(int level)
+    {
+        SceneManager.LoadScene(level);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Options()
     {
-        
+
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
+        Debug.Log("Exited");
     }
 }
