@@ -2502,6 +2502,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354749969}
     m_Modifications:
+    - target: {fileID: 7711096008695508676, guid: 6cfbb9058893b834682b62ceb7ff6810, type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711096008695508676, guid: 6cfbb9058893b834682b62ceb7ff6810, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 1641548200286959669, guid: 97d47089170550a4c90e9e44711fcc4f, type: 3}
+    - target: {fileID: 7711096008695508676, guid: 6cfbb9058893b834682b62ceb7ff6810, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 8440510077267459181, guid: 97d47089170550a4c90e9e44711fcc4f, type: 3}
     - target: {fileID: 8016181900458370905, guid: 6cfbb9058893b834682b62ceb7ff6810, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2612,6 +2624,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5934511533498753424, guid: c4616ce23fb0ee94abfdf1ad8393453f, type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934511533498753424, guid: c4616ce23fb0ee94abfdf1ad8393453f, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 1641548200286959669, guid: 97d47089170550a4c90e9e44711fcc4f, type: 3}
+    - target: {fileID: 5934511533498753424, guid: c4616ce23fb0ee94abfdf1ad8393453f, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 8440510077267459181, guid: 97d47089170550a4c90e9e44711fcc4f, type: 3}
     - target: {fileID: 8290918701748866689, guid: c4616ce23fb0ee94abfdf1ad8393453f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
