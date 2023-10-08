@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
     public void LevelSelect(int level)
     {
         SceneManager.LoadScene(level);
+        Time.timeScale = 1;
     }
 
     public void Options()

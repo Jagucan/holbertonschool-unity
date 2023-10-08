@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
     {
         EnableTimer();
     }
-    private void Update()
+    void Update()
     {
         if (timeState)
         {

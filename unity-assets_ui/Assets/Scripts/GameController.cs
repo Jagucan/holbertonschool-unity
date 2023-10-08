@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour
             StartCoroutine(LoadScene(2f));
         }
     }
-    void RestartScene()
+    public void RestartScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);

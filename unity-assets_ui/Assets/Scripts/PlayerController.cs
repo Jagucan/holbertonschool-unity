@@ -26,12 +26,15 @@ public class Example : MonoBehaviour
         float moveZ = Input.GetAxis("Vertical");
 
         controller.Move(moveZ * playerSpeed * Time.deltaTime * transform.forward);
+        Debug.Log("move z");
         controller.Move(moveX * playerSpeed * Time.deltaTime * transform.right);
+        Debug.Log("move x");
 
         // Changes the height position of the player (Jump).
         if (Input.GetButtonDown("Jump") && groundedPlayer)
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+            Debug.Log("jump");
         }
 
         playerVelocity.y += gravityValue * Time.deltaTime;
