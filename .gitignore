@@ -108,3 +108,17 @@ unity-assets_models_textures/Library/ArtifactDB
 */TextMesh Pro/
 unity-assets_models_textures/Assets/TextMesh Pro/
 unity-assets_ui/Assets/Models/Paladin/*
+unity-assets_ui/Assets/Scripts/PlayerMovement.cs
+unity-assets_ui/Assets/Scripts/PlayerMovement.cs.meta
+unity-assets_ui/Assets/Scripts/CameraOrbit.cs.meta
+unity-assets_ui/Assets/Scripts/CameraOrbit.cs
+unity-assets_ui/Assets/Scenes/SampleScene.unity.meta
+unity-assets_ui/Assets/Scenes/SampleScene.unity
+unity-assets_ui/Assets/Models/Paladin.meta
+unity-assets_ui/Assets/Material/MatRed.mat
+unity-assets_ui/Assets/Material/MatRed.mat.meta
+unity-assets_ui/Assets/Material.meta
+unity-assets_ui/Assets/TextMesh Pro/Examples & Extras/Scripts/TeleType.cs
+unity-assets_ui/Assets/TextMesh Pro/Examples & Extras/Scripts/TeleType.cs
+unity-assets_ui/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_PhoneNumberValidator.cs
+unity-assets_ui/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs

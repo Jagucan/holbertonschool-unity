@@ -255,7 +255,7 @@ namespace TMPro.Examples
 
                     TMP_LinkInfo linkInfo = m_TextMeshPro.textInfo.linkInfo[linkIndex];
 
-                    // Debug.Log("Link ID: \"" + linkInfo.GetLinkID() + "\"   Link Text: \"" + linkInfo.GetLinkText() + "\""); // Example of how to retrieve the Link ID and Link Text.
+                    // Debug.Log("Link ID: \"" + linkInfo.GetLinkID() + "\"   Link Text: \"" + linkInfo.GetLinkText() + "\""); // PlayerController of how to retrieve the Link ID and Link Text.
 
                     Vector3 worldPointInRectangle;
                     RectTransformUtility.ScreenPointToWorldPointInRectangle(m_TextMeshPro.rectTransform, Input.mousePosition, m_Camera, out worldPointInRectangle);
@@ -420,8 +420,8 @@ namespace TMPro.Examples
 
                 }
 
-                // Example of how to modify vertex attributes like colors
-                #region Vertex Attribute Modification Example
+                // PlayerController of how to modify vertex attributes like colors
+                #region Vertex Attribute Modification PlayerController
                 UIVertex[] uiVertices = m_TextMeshPro.textInfo.meshInfo.uiVertices;
 
                 Color32 c = new Color32((byte)Random.Range(0, 255), (byte)Random.Range(0, 255), (byte)Random.Range(0, 255), 255);
