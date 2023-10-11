@@ -2,15 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class Timer : MonoBehaviour
 {
 
-    [SerializeField] private float minimumTime = 0f;
+    private float minimumTime = 0f;
     private float currentTime;
     private bool timeState = false;
-    [SerializeField] private Timer timer;
     public Text timerText;
     private int min, sec, cent;
 
@@ -24,7 +22,6 @@ public class Timer : MonoBehaviour
         {
             ChangeTimer();
         }
-
     }
 
     // Print the Time Current in the Screen.
@@ -55,5 +52,12 @@ public class Timer : MonoBehaviour
     public void DisableTimer()
     {
         ChangeTimerState(false);
+    }
+
+    public void Win()
+    {
+        Time.timeScale = 0;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }

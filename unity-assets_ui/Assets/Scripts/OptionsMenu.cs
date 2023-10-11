@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class OptionsMenu : MonoBehaviour
 {
+    
+    public void Apply()
+    {
+
+    }
     public void Back()
     {
 
