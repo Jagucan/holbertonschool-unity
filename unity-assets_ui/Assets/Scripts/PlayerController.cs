@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
     public new Transform camera;
     public float jumpHeight;
     public float speed = 4;
-    private float gravity = -9.8f;
-    private bool groundedPlayer;
+    private float gravity = -9.81f;
+    //private bool groundedPlayer;
 
     // Update is called once per frame
     void Update()
@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
         float hor = Input.GetAxis("Horizontal");
         float ver = Input.GetAxis("Vertical");
         Vector3 movement = Vector3.zero;
-        groundedPlayer = characterController.isGrounded;
+        //groundedPlayer = characterController.isGrounded;
 
         if (hor != 0 || ver != 0)
         {
