@@ -5,18 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class WinMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    private float actualLevel;
+    private float nextLevel;
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
@@ -24,6 +14,19 @@ public class WinMenu : MonoBehaviour
 
     public void Next()
     {
-        //if ()
+        actualLevel = SceneManager.GetActiveScene().buildIndex;
+        
+        if (actualLevel == 1)
+        {
+            SceneManager.LoadScene(2);
+        }
+        else if (actualLevel == 2)
+        {
+            SceneManager.LoadScene(3);
+        }
+        else if (actualLevel == 3)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }

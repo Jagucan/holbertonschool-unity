@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight;
     public float speed = 4;
     private float gravity = -9.81f;
-    //private bool groundedPlayer;
 
     // Update is called once per frame
     void Update()
@@ -18,7 +17,6 @@ public class PlayerController : MonoBehaviour
         float hor = Input.GetAxis("Horizontal");
         float ver = Input.GetAxis("Vertical");
         Vector3 movement = Vector3.zero;
-        //groundedPlayer = characterController.isGrounded;
 
         if (hor != 0 || ver != 0)
         {
@@ -38,13 +36,12 @@ public class PlayerController : MonoBehaviour
 
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), 0.2f);
         }
-        /*
-        if (Input.GetButtonDown("Jump") && groundedPlayer)
+        
+        if (characterController.isGrounded && Input.GetButtonDown("Jump"))
         {
-            movement.y += jumpHeight - 2f * gravity;
-            Debug.Log("jump");
+            float jumpVelocity = Mathf.Sqrt(-2 * gravity * jumpHeight);
+            movement.y = jumpVelocity;
         }
-        */
         movement.y += gravity * Time.deltaTime;
         characterController.Move(movement);
     }

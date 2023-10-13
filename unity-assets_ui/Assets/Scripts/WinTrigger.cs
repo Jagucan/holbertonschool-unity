@@ -21,10 +21,12 @@ public class WinTrigger : MonoBehaviour
             timer.enabled = false;
             timer.DisableTimer();
             timerTime = timer.timerText.text;
-            //timer.timerText.color = Color.green;
-            //timer.timerText.fontSize = 60;;
             winText.text = timerTime;
             timerCanvas.SetActive(false);
+
+            Time.timeScale = 0;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }
