@@ -85,3 +85,5 @@ unity_publishing/*
 */Builds/
 */Logs/
 */TextMesh Pro/
+*/.plastic/
+*/
