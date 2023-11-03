@@ -70,12 +70,13 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
 unity_concepts/*
 unity-assets_models_textures/*
 unity_publishing/*
+
 .vsconfig
 .gitattributes
-unity-assets_models_textures/*
 
 */Library/
 */Temp/
@@ -83,12 +84,4 @@ unity-assets_models_textures/*
 */Build/
 */Builds/
 */Logs/
-*/UserSettings/
 */TextMesh Pro/
-unity-assets_ui/*
-holbertonschool-unity/2D-clone/*
-2D-clone/Assets/*
-unity-animation/Assets/KinematicCharacterController/Examples/Materials.meta
-2D-clone/Assets/PhysicsMaterials.meta
-2D-clone/*
-2D-clone/Assets/PhysicsMaterials.meta
