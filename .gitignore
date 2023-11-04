@@ -86,4 +86,5 @@ unity_publishing/*
 */Logs/
 */TextMesh Pro/
 */.plastic/
-*/
+
+unity-animation/ignore.conf
