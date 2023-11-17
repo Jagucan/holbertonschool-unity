@@ -88,3 +88,4 @@ unity_publishing/*
 */.plastic/
 
 unity-animation/ignore.conf
+unity-animation/Assets/Adaptive Performance/Settings/Simulator Provider Settings.asset
