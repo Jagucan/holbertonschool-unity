@@ -1,62 +1,54 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Analytics;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject pauseMenu;
-    public bool pause = false;
+    public Canvas pauseMenu;
+    public GameObject mainCamera;
+    private Scene currentScene;
 
-    // Update is called once per frame
     void Update()
     {
-        Pause();
+        if (Input.GetKeyDown("escape"))
+            {
+                Resume();
+            }
     }
 
     public void Pause()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (pause == false)
-            {
-                pauseMenu.SetActive(true);
-                pause = true;
-                Time.timeScale = 0;
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.None;
-            }
-
-            else if (pause == true)
-            {
-                Resume();
-            }
-        }
+        pauseMenu.gameObject.SetActive(true);
+        Time.timeScale = 0;
+        mainCamera.gameObject.GetComponent<CameraController>().enabled = false;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
-
+  
     public void Resume()
     {
-        pauseMenu.SetActive(false);
-        pause = false;
         Time.timeScale = 1;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        mainCamera.gameObject.GetComponent<CameraController>().enabled = true;
+        pauseMenu.gameObject.SetActive(false);
     }
 
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Time.timeScale = 1;
+        Resume();
+        currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadSceneAsync(currentScene.buildIndex);
+    }
+ 
+    public void Options()
+    {
+        currentScene = SceneManager.GetActiveScene();
+        PlayerPrefs.SetString("Prev", currentScene.name);
+        Resume();
+        SceneManager.LoadSceneAsync(4);
     }
 
     public void MainMenu()
     {
-        SceneManager.LoadScene(0);
-    }
-
-    public void Options()
-    {
-        SceneManager.LoadScene(4);
+        Resume();
+        SceneManager.LoadSceneAsync(0);
     }
 }

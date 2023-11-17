@@ -1,32 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class WinMenu : MonoBehaviour
 {
-    private float actualLevel;
-    private float nextLevel;
+    public GameObject mainCamera;
+    private int currentLevel;
+
+
     public void MainMenu()
     {
-        SceneManager.LoadScene(0);
+        mainCamera.gameObject.GetComponent<CameraController>().enabled = true;
+        SceneManager.LoadSceneAsync(0);
     }
 
     public void Next()
     {
-        actualLevel = SceneManager.GetActiveScene().buildIndex;
+        mainCamera.gameObject.GetComponent<CameraController>().enabled = true;
+        currentLevel = SceneManager.GetActiveScene().buildIndex;
         
-        if (actualLevel == 1)
+        if (currentLevel != 3)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadSceneAsync(currentLevel + 1);
+            Time.timeScale = 1;
         }
-        else if (actualLevel == 2)
+        else
         {
-            SceneManager.LoadScene(3);
-        }
-        else if (actualLevel == 3)
-        {
-            SceneManager.LoadScene(0);
-        }
+            SceneManager.LoadSceneAsync(0);
+        }   
     }
 }

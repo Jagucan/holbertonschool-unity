@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 5335e0fad804f6c49b649795e0172589
+guid: 68897f1e092c3c54d8db48e13ade728e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5490915748702937267
+      213: 21300000
     second: button-level02_0
   - first:
-      213: -1561580840248355024
+      213: 21300002
     second: button-level02_1
   - first:
-      213: -2404911329485341581
+      213: 21300004
     second: button-level02_2
   externalObjects: {}
   serializedVersion: 12
@@ -54,11 +54,11 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 592, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -72,7 +72,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
   cookieLightType: 1
   platformSettings:
@@ -88,7 +88,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -101,7 +101,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: iPhone
     maxTextureSize: 2048
@@ -114,20 +114,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
@@ -140,7 +127,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
@@ -153,7 +140,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -163,17 +150,17 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 592
+        width: 600
         height: 650
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 10, y: 10, z: 10, w: 10}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b0690508c6a33c40800000000000000
-      internalID: 5490915748702937267
+      spriteID: 6a7bb1c55acf82a4dbf7bf9cc1b3a462
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -182,19 +169,19 @@ TextureImporter:
       name: button-level02_1
       rect:
         serializedVersion: 2
-        x: 598
+        x: 600
         y: 0
-        width: 610
-        height: 642
+        width: 600
+        height: 650
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 10, y: 10, z: 10, w: 10}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 037d0f8df76245ae0800000000000000
-      internalID: -1561580840248355024
+      spriteID: d303c7edfe7400e4ba24d1cfedab40e9
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -203,19 +190,19 @@ TextureImporter:
       name: button-level02_2
       rect:
         serializedVersion: 2
-        x: 1202
+        x: 1200
         y: 0
-        width: 598
-        height: 648
+        width: 600
+        height: 650
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 10, y: 10, z: 10, w: 10}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37cb6b933e900aed0800000000000000
-      internalID: -2404911329485341581
+      spriteID: a1a010f11dff6d242af829a973e80ad0
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -223,7 +210,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 8fb32db9695c53247becfeebb942353a
     internalID: 0
     vertices: []
     indices: 
@@ -231,9 +218,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      button-level02_0: 5490915748702937267
-      button-level02_1: -1561580840248355024
-      button-level02_2: -2404911329485341581
+      button-level02_0: 21300000
+      button-level02_1: 21300002
+      button-level02_2: 21300004
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

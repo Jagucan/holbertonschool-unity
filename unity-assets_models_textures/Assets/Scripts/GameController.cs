@@ -8,6 +8,13 @@ public class GameController : MonoBehaviour
 {
     public GameObject player;
     public GameObject newPlayer;
+    public GameController game;
+    public GameObject gameObject;
+
+    public void start()
+    {
+        gameObject 
+    }
 
     void OnTriggerEnter(Collider other)
     {

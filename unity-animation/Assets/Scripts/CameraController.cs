@@ -1,60 +1,51 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    
-    private Vector2 angle = new(90 * Mathf.Deg2Rad, 0);
-    public Transform follow;
-    private float distance = -6.25f;
-    public Vector2 sensitivity;
+    public float turn = 3f;
+    public Transform player;
+    private Transform transform;
+    private Vector3 orbit;
+    private Quaternion angleX;
+    private Quaternion angleY;
     public bool isInverted;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        if (PlayerPrefs.GetInt("Y", 0) == 0)
+        {
+            isInverted = false;
+        }
+        else
+        {
+            isInverted = true;
+        }
+
+        transform = GetComponent<Transform>();
+    }
+
+    void Start()
+    {   
+        orbit = new Vector3(0, 1.25f, -6.25f);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
-    void Update()
-    {
-        float hor = Input.GetAxis("Mouse X");
-
-        if (hor != 0)
-        {
-            angle.x += hor * Mathf.Deg2Rad * sensitivity.x;
-        }
-
-        float ver = Input.GetAxis("Mouse Y");
-
-        if (ver != 0)
-        {
-            if (isInverted == true)
-            {
-                angle.y -= ver * Mathf.Deg2Rad * sensitivity.y;
-                angle.y = Mathf.Clamp(angle.y, -45 * Mathf.Deg2Rad, 15 * Mathf.Deg2Rad);
-            }
-            else if (isInverted == false)
-            {
-                angle.y += ver * Mathf.Deg2Rad * sensitivity.y;
-                angle.y = Mathf.Clamp(angle.y, -45 * Mathf.Deg2Rad, 15 * Mathf.Deg2Rad);
-            }
-        }
-    }
-
-    // Update is called once per frame
     void LateUpdate()
     {
-        Vector3 orbit = new(
-            Mathf.Cos(angle.x) * Mathf.Cos(angle.y),
-            Mathf.Sin(angle.y),
-            Mathf.Sin(angle.x) * Mathf.Cos(angle.y)
-            );
-
-        transform.position = follow.position + orbit * distance;
-        transform.rotation = Quaternion.LookRotation(follow.position - transform.position);
+        angleX = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * turn, Vector3.up);
+        
+        if (isInverted == true)
+        {
+            angleY = Quaternion.AngleAxis(-1 * (Input.GetAxis("Mouse Y") * turn), Vector3.left);
+        }
+        else
+        {
+            angleY = Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * turn, Vector3.left);
+        }
+        
+        orbit = angleX * angleY * orbit;
+        transform.position = player.position + orbit;
+        transform.LookAt(player.position + new Vector3(0, 0.24f, 0));
     }
 }

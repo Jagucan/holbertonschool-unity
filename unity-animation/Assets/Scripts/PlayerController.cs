@@ -1,48 +1,110 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    public CharacterController characterController;
-    public new Transform camera;
-    public float jumpHeight;
-    public float speed = 4;
-    private float gravity = -9.81f;
+    private CharacterController player;
+    private Transform transform;
+    public Transform mainCamera;
+    private Vector3 playerMovement = Vector3.zero;
+    private Vector3 move = Vector3.zero;
+    private Quaternion rotation;
+    public float speed = 5f;
+    public float jump = 10f;
+    private float verticalMovement;
+    public Canvas pauseMenu;
+    private Transform ty;
+    private Animator anim;
+    private float fall = 0f;
 
-    // Update is called once per frame
+    void Awake()
+    {
+        player = GetComponent<CharacterController>();
+        transform = GetComponent<Transform>();
+        ty = transform.Find("ty");
+        anim = ty.GetComponent<Animator>();
+    }
+
     void Update()
     {
-        float hor = Input.GetAxis("Horizontal");
-        float ver = Input.GetAxis("Vertical");
-        Vector3 movement = Vector3.zero;
+        verticalMovement = playerMovement.y;
+        playerMovement = Vector3.zero;
 
-        if (hor != 0 || ver != 0)
+        if (Input.GetKey("w"))
         {
-            Vector3 forward = camera.forward;
-            forward.y = 0;
-            forward.Normalize();
+            playerMovement = Vector3.forward + playerMovement;
+        }
+            
+        if (Input.GetKey("s"))
+        {
+            playerMovement = Vector3.back + playerMovement;
+        }
+            
+        if (Input.GetKey("d"))
+        {
+            playerMovement = Vector3.right + playerMovement;
+        }
+            
+        if (Input.GetKey("a"))
+        {
+            playerMovement = Vector3.left + playerMovement;
+        }
+            
+        playerMovement = ((mainCamera.right * playerMovement.x) + (mainCamera.forward * playerMovement.z)) * speed;
+        
+        if (player.isGrounded)
+        {
+            fall = 0;
+            anim.SetBool("Grounded", true);
 
-            Vector3 right = camera.right;
-            right.y = 0;
-            right.Normalize();
+            if (Input.GetKeyDown("space"))
+            {
+                verticalMovement = jump;
+                anim.SetTrigger("Jump");
+            }
+            else
+            {
+                verticalMovement = 0;    
+            }
+                
+        }
+        else
+        {
+            fall += Time.deltaTime;
+            anim.SetBool("Grounded", false);
+        }
 
-            Vector3 direction = forward * ver + right * hor;
-            float movementSpeed = Mathf.Clamp01(direction.magnitude);
-            direction.Normalize();
+        if (playerMovement != Vector3.zero)
+        {
+            move = new Vector3(playerMovement.x, 0, playerMovement.z);
+            anim.SetBool("Moving", true);
+        }
+        else
+        {
+            anim.SetBool("Moving", false);
+        }
 
-            movement = movementSpeed * speed * Time.deltaTime * direction;
+        playerMovement.y = verticalMovement;
+        playerMovement.y = playerMovement.y - (20 * Time.deltaTime);
+        player.Move(new Vector3(playerMovement.x, playerMovement.y, playerMovement.z) * Time.deltaTime);
 
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), 0.2f);
+        if (playerMovement != Vector3.zero)
+        {
+            rotation = Quaternion.LookRotation(move);
+            ty.rotation = rotation;
         }
         
-        if (characterController.isGrounded && Input.GetButtonDown("Jump"))
+        anim.SetFloat("Fall", fall);
+        
+        if (transform.position.y < -50.0f)
         {
-            float jumpVelocity = Mathf.Sqrt(-2 * gravity * jumpHeight);
-            movement.y = jumpVelocity;
+            transform.position = new Vector3(0, 10, 0);
         }
-        movement.y += gravity * Time.deltaTime;
-        characterController.Move(movement);
+            
+        if (Input.GetKeyDown("escape"))
+        {
+            pauseMenu.GetComponent<PauseMenu>().Pause();
+        }
     }
 }
