@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1366
     height: 725
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 149
+  controlID: 96
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 52
+  controlID: 50
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -247,8 +247,8 @@ MonoBehaviour:
     y: 0
     width: 196
     height: 675
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -296,7 +296,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 528
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -340,9 +340,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6adcffff
-      m_LastClickedID: -9110
-      m_ExpandedIDs: 26fbffff
+      m_SelectedIDs: 00070100
+      m_LastClickedID: 0
+      m_ExpandedIDs: 8efcfdffdc08feff5217feffb618feff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -736,9 +736,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 31.10679, y: -13.10857, z: 39.325912}
+    m_Target: {x: 14.670044, y: -16.586184, z: 39.85764}
     speed: 2
-    m_Value: {x: 31.10679, y: -13.10857, z: 39.325912}
+    m_Value: {x: 14.670044, y: -16.586184, z: 39.85764}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -786,11 +786,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.19225937, y: -0.05825657, z: 0.011433917, w: -0.9795485}
     speed: 2
-    m_Value: {x: -0.19222388, y: -0.06119485, z: 0.012010622, w: -0.9793677}
+    m_Value: {x: -0.19225937, y: -0.05825657, z: 0.011433917, w: -0.9795485}
   m_Size:
-    m_Target: 53.483105
+    m_Target: 28.91563
     speed: 2
-    m_Value: 51.180004
+    m_Value: 28.91563
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -958,7 +958,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1035,7 +1035,7 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1043,16 +1043,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\Unity\holbertonschool-unity\unity-animation
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 3}
-    m_SelectedIDs: 445e0000
-    m_LastClickedID: 24132
-    m_ExpandedIDs: 000000001e5e0000
+    m_SelectedIDs: 90410000
+    m_LastClickedID: 16784
+    m_ExpandedIDs: 00000000bc400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1080,7 +1080,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001e5e0000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

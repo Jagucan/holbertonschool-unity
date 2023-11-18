@@ -89,3 +89,6 @@ unity_publishing/*
 
 unity-animation/ignore.conf
 unity-animation/Assets/Adaptive Performance/Settings/Simulator Provider Settings.asset
+*.dwlt
+unity-animation/Assets/Adaptive Performance/Settings/Simulator Provider Settings.asset.meta
+unity-animation/Assets/Adaptive Performance/Settings/Simulator Provider Settings.asset.meta
