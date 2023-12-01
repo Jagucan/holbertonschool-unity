@@ -92,3 +92,110 @@ unity-animation/Assets/Adaptive Performance/Settings/Simulator Provider Settings
 *.dwlt
 unity-animation/Assets/Adaptive Performance/Settings/Simulator Provider Settings.asset.meta
 unity-animation/Assets/Adaptive Performance/Settings/Simulator Provider Settings.asset.meta
+unity-ar_business_card/Packages/*
+unity-ar_business_card/ProjectSettings/*
+unity-ar_business_card/Assets/TextMesh Pro/Documentation.meta
+unity-ar_business_card/Assets/TextMesh Pro/Fonts.meta
+unity-ar_business_card/Assets/TextMesh Pro/Resources.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders.meta
+unity-ar_business_card/Assets/TextMesh Pro/Sprites.meta
+unity-ar_business_card/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf
+unity-ar_business_card/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta
+unity-ar_business_card/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt
+unity-ar_business_card/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta
+unity-ar_business_card/Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+unity-ar_business_card/Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta
+unity-ar_business_card/Assets/TextMesh Pro/Resources/Fonts & Materials.meta
+unity-ar_business_card/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt
+unity-ar_business_card/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta
+unity-ar_business_card/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+unity-ar_business_card/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta
+unity-ar_business_card/Assets/TextMesh Pro/Resources/Sprite Assets.meta
+unity-ar_business_card/Assets/TextMesh Pro/Resources/Style Sheets.meta
+unity-ar_business_card/Assets/TextMesh Pro/Resources/TMP Settings.asset
+unity-ar_business_card/Assets/TextMesh Pro/Resources/TMP Settings.asset.meta
+unity-ar_business_card/Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+unity-ar_business_card/Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat.meta
+unity-ar_business_card/Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+unity-ar_business_card/Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset.meta
+unity-ar_business_card/Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+unity-ar_business_card/Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta
+unity-ar_business_card/Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+unity-ar_business_card/Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset.meta
+unity-ar_business_card/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+unity-ar_business_card/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta
+unity-ar_business_card/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+unity-ar_business_card/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF.shader
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMPro.cginc
+unity-ar_business_card/Assets/TextMesh Pro/Shaders/TMPro.cginc.meta
+unity-ar_business_card/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt
+unity-ar_business_card/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
+unity-ar_business_card/Assets/TextMesh Pro/Sprites/EmojiOne.json
+unity-ar_business_card/Assets/TextMesh Pro/Sprites/EmojiOne.json.meta
+unity-ar_business_card/Assets/TextMesh Pro/Sprites/EmojiOne.png
+unity-ar_business_card/Assets/TextMesh Pro/Sprites/EmojiOne.png.meta
+unity-ar_business_card/Assets/Resources.meta
+unity-ar_business_card/Assets/Editor.meta
+unity-ar_business_card/Assets/Scripts.meta
+unity-ar_business_card/Assets/Scenes.meta
+unity-ar_business_card/Assets/StreamingAssets.meta
+unity-ar_business_card/Assets/TextMesh Pro.meta
+unity-ar_business_card/QCAR/lh
+unity-ar_business_card/QCAR/somedata16
+unity-ar_business_card/QCAR/lh
+unity-ar_business_card/QCAR/somedata16
+unity-ar_business_card/UserSettings/EditorUserSettings.asset
+unity-ar_business_card/UserSettings/Search.index
+unity-ar_business_card/UserSettings/Search.settings
+unity-ar_business_card/UserSettings/EditorUserSettings.asset
+unity-ar_business_card/UserSettings/Search.index
+unity-ar_business_card/UserSettings/Search.settings
+unity-ar_business_card/Assets/StreamingAssets/Vuforia.meta
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/ARBCard.dat
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/ARBCard.dat.meta
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/ARBCard.xml
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/ARBCard.xml.meta
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/VuforiaMars_Images.dat
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/VuforiaMars_Images.dat.meta
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/VuforiaMars_Images.xml
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/VuforiaMars_Images.xml.meta
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/ARBCard.dat
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/ARBCard.dat.meta
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/ARBCard.xml
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/ARBCard.xml.meta
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/VuforiaMars_Images.dat
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/VuforiaMars_Images.dat.meta
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/VuforiaMars_Images.xml
+unity-ar_business_card/Assets/StreamingAssets/Vuforia/VuforiaMars_Images.xml.meta
