@@ -93,16 +93,23 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
+    - _Disintegration_Fragment_Scale: 84.36
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
+    - _Float_max: 2
+    - _Float_min: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Glow_Power: 2.5
+    - _Glow_strength: 3
+    - _Maximum_glow_strength: 1
     - _Metallic: 0
+    - _Minimum_glow_strength: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
+    - _Pulse_frequency: 0.94
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
@@ -116,9 +123,13 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Base_color: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Glow_Color: {r: 0, g: 1, b: 0.5128207, a: 0}
+    - _Glow_color: {r: 0, g: 0.9811321, b: 0.5139759, a: 0}
+    - _Maximum_glow_strength: {r: 0.1, g: 1, b: 0, a: 0}
+    - _Minimum_glow_strength: {r: -1, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &2588833288997107090
