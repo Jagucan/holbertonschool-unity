@@ -10,8 +10,6 @@ Material:
   m_Name: ice
   m_Shader: {fileID: -6465566751694194690, guid: 0d28e28fc2cb2544fbbb4c115efc3ea9,
     type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -20,7 +18,6 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -70,6 +67,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_722c4e78a9f241709d8c9f9a50b5329d_Out_0:
+        m_Texture: {fileID: 2800000, guid: fbc71a2065f751d4c89b62a6e0473356, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2DAsset_722c4e78a9f241709d8c9f9a50b5329d_Out_0_Texture2D:

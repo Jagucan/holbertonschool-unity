@@ -6,10 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Bowling Scene.unity
+    guid: fabfe90d624c9154fb51a0105c5d6428
+  - enabled: 0
+    path: Assets/Samples/XR Interaction Toolkit/2.5.2/Starter Assets/DemoScene.unity
+    guid: 319dafa5c80f29f428dc1e0d03f04177
   m_configObjects:
     WebXR.Settings: {fileID: 11400000, guid: f78a354f1680a3c4d85a0bbb1f9889fc, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 91bb5577604e71745a9f158d9f0da4bc,
+      type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 0004809357b5b794a998cf33c5a99c5f,
       type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9307f59b8feba294583c2dbb3f512a5a,
